@@ -1,0 +1,23 @@
+{
+  "name": "6-typescript",
+  "version": "1.0.0",
+  "description": "---\r marp: true\r title: Introduction to TypeScript\r theme: default\r paginate: true\r ---",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start-typescript": "npx tsx watch ./src/index.ts",
+    "start-javascript": "nodemon ./src/javascript-with-errors.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
