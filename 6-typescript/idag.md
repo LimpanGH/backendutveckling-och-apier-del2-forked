@@ -12,7 +12,6 @@ paginate: true
 - Typescript intro
 - Code example
 - Exercises available in the repo
-- Examination assignment will be introduced tomorrow
 
 ---
 

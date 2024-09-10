@@ -7,8 +7,42 @@ import {
   GraphQLList,
   GraphQLSchema,
   GraphQLInputObjectType,
+  GraphQLScalarType,
+  Kind,
 } from "graphql";
 import Sale from "./models.js";
+
+const EmailScalar = new GraphQLScalarType({
+  name: "Email",
+  description: "A custom scalar for validating emails",
+  serialize(value) {
+    return value; // value sent to the client
+  },
+  parseValue(value) {
+    // value from the client
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
+      throw new Error("Invalid email format");
+    }
+    return value;
+  },
+  parseLiteral(ast) {
+    if (ast.kind === Kind.STRING) {
+      if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(ast.value)) {
+        throw new Error("Invalid email format");
+      }
+      return ast.value;
+    }
+    return null;
+  },
+});
+
+// example mutation:
+// mutation {
+//   addSale(saleDate: "1427144809506", items: [{name: "printer paper", tags: ["office", "stationary"], price: 40.01, quantity: 2}], storeLocation: "Denver", customer: {gender: "M", age: 42, email: "cauhowitwuta.sv", satisfaction: 4}, couponUsed: true, purchaseMethod: "Online") {
+//     id
+//   }
+// }
+
 
 const ItemType = new GraphQLObjectType({
   name: "Item",
@@ -70,7 +104,7 @@ const CustomerInputType = new GraphQLInputObjectType({
   fields: () => ({
     gender: { type: GraphQLString },
     age: { type: GraphQLInt },
-    email: { type: GraphQLString },
+    email: { type: EmailScalar },
     satisfaction: { type: GraphQLInt },
   }),
 });

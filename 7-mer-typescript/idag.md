@@ -12,6 +12,7 @@ paginate: true
 - Repetition TypeScript
 - Kod-exempel med TypeScript
 - Kod-exempel med Mongoose/MongoDb
+- Examination assignment will be introduced tomorrow
 
 ---
 

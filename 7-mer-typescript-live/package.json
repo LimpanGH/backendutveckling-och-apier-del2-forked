@@ -1,0 +1,25 @@
+{
+  "name": "7-mer-typescript-live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-typescript": "npx tsx watch ./src/index.ts",
+    "start-javascript": "nodemon ./src/index.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.6.1",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "express": "^4.20.0",
+    "nodemon": "^3.1.4",
+    "tsx": "^4.19.0"
+  }
+}
