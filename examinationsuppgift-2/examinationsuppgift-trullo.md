@@ -3,18 +3,18 @@
 
 ## Mål
 
-Målet är att skapa ett API för en projekthanterings-app vid namn Trullo. APIet ska möjliggöra att användare (User) kan skapa uppgifter (Task) och planera projekt. Databasen ska vara antingen SQL eller NoSQL.
+Målet är att skapa ett API för en projekthanterings-applikation vid namn Trullo. APIet ska möjliggöra att användare (User) kan skapa uppgifter (Task) och planera projekt. Databasen ska vara antingen SQL eller NoSQL.
 
-### Krav på tekniker och verktyg
+### Teoretiska resonemang
 
-- JavaScript och TypeScript
-- NodeJS och ExpressJS
-- SQL (PostgreSQL) eller NoSQL-databas (MongoDb)
+- Motivera ditt val av databas
+- Redogör vad de olika teknikerna (ex. verktyg, npm-paket, etc.) gör i applikationen
+- Redogör översiktligt hur applikationen fungerar
 
 ### Krav för Godkänt
 
-- APIet skapas med NodeJS, ExpressJS och TypeScript
-- SQL eller NoSQL-databas
+- APIet använder NodeJS, ExpressJS och TypeScript
+- SQL- eller NoSQL-databas
 - Datamodellen har objektet `Task` med följande fält
   - id
   - title
@@ -50,5 +50,5 @@ Följande urval är exempel på vidareutveckling. Egna förslag på vidareutveck
 
 ### Inlämning
 
-- Kodinlämning i Canvas
+- Kodinlämning i Canvas med länk till repository (t.ex. GitHub)
 - Inlämning senast **söndagen den 29e september kl. 23:59**
