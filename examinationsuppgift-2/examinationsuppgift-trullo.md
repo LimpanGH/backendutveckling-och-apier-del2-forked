@@ -49,5 +49,6 @@ Följande urval är exempel på vidareutveckling. Egna förslag på vidareutveck
 
 ### Inlämning
 
-- Kodinlämning i Canvas med länk till repository (t.ex. GitHub)
+- Lägg en textfil med svaren från **Teoretiska resonemang** ovan i roten av ditt git repository (med t.ex. filnamnet `README.md`)
+- Kodinlämning i Canvas med länk till git repository (t.ex. GitHub)
 - Inlämning senast **söndagen den 29e september kl. 23:59**
