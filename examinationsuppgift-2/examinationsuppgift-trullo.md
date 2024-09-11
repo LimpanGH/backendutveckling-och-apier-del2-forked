@@ -1,4 +1,3 @@
-
 # Examinationsuppgift - Trullo
 
 ## Mål
