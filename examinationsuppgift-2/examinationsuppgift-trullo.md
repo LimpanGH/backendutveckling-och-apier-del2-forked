@@ -36,10 +36,10 @@ Målet är att skapa ett API för en projekthanterings-applikation vid namn Trul
 
 Följande urval är exempel på vidareutveckling. Egna förslag på vidareutveckling välkommnas.
 
-- Applikationen är robust med genomtänkt felhantering och validering
+- Applikationen är robust med genomtänkt felhantering och validering (viktigast för VG)
 - Utveckla datamodellen med fler fält och objekt
   - Ex. fältet `tags` på `Task`
-  - Ex. objektet `Project` så flera projekt kan hanteras samtidigt
+  - Ex. objektet `Project` så flera projekt kan hanteras samtidigt där varje `Task` tillhör ett projekt. Tänk er Trello där varje **Board** är ett projekt.
 - Authentication & Authorization
   - Implementera autentisering med JWT
   - Endast användare autentiserade med JWT kan ändra sina uppgifter
