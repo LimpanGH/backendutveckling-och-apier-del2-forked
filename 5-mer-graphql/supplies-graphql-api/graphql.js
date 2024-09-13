@@ -122,8 +122,8 @@ const RootQuery = new GraphQLObjectType({
     sales: {
       type: new GraphQLList(SaleType),
       args: {
-        limit: { type: GraphQLInt },
-        storeLocation: { type: GraphQLString },
+        limit: { type: GraphQLInt, defaultValue: 10 },
+        storeLocation: { type: GraphQLString, defaultValue: "Denver"},
       },
       resolve(parent, args) {
         return Sale.find({})
