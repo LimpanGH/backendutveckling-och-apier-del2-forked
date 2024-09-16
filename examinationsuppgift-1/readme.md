@@ -75,19 +75,18 @@ The requirements can freely be expanded on with your own ideas.
 
 2. **Define the GraphQL Schema**
    - Define the GraphQL types following the same model as Task 1.
-   - Define the following queries (same as Task 1):
+   - Define the following query/mutation functions (same as Task 1):
      - `products`: Retrieve a list of all products.
      - `product(id: ID!)`: Retrieve details of a single product by ID.
      - `totalStockValue`: Retrieve the total value of all products in stock.
      - `totalStockValueByManufacturer`: Retrieve the total value of products in stock, grouped by manufacturer.
      - `lowStockProducts`: Retrieve a list of products with less than 10 units in stock.
-     - `criticalStockProducts`: Retrieve a compact list of products with less than 5 units in stock, including the manufacturer’s name, contact name, phone, and email.
+     - `criticalStockProducts`: Retrieve a list of products with less than 5 units in stock, including the manufacturer’s name, contact name, phone, and email.
      - `manufacturers`: Retrieve a list of all manufacturers the company is doing business with.
-
-   - Define the following mutations:
      - `addProduct`: Create a new product.
      - `updateProduct`: Update an existing product by ID.
      - `deleteProduct`: Delete a product by ID.
+   - Add an example query/mutation for each function in the file `queries-and-mutations.md` in your root directory
 
 3. **Resolvers**
 
